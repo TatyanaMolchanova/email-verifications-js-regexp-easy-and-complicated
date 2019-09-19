@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <form action="">
+       <input type="email">
+       <input type="submit">
+   </form>
+    
+<script>
+    const simpleEmailRegex = /\S+@\S+\.\S+/;
+    document.querySelector('input').value;
+    simpleEmailRegex.test(document.querySelector('input').value);
+    
+    const complexEmailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-z]{2,}))$/;
+    
+    complexEmailRegex.test(document.querySelector('input').value);
+</script>
+</body>
+</html>
